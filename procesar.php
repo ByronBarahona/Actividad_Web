@@ -7,7 +7,7 @@
 <body>
 <body>
     <div class="boleta">
-        <img src="../../Cine_Hoyts.png" alt="Logo cine" class="logo">
+        <img src="./Img/Cine_Hoyts.png" alt="Cine_Hoyts">
         <h3>Boleta de compra</h3>
         <?php
         $descuentos = array(
@@ -19,12 +19,15 @@
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $edad = $_POST['edad'];
             $cantidad = $_POST['cantidad'];
+            $pelicula = $_POST['pelicula'];
 
             $descuento = $descuentos[$edad];
             $subtotal = 20000 * $cantidad;
             $descuento_aplicado = $subtotal * $descuento;
             $total = $subtotal - $descuento_aplicado;
 
+
+            echo "<p>Pelicula Seleccionada: $pelicula</p>";
             echo "<p>Entradas: $cantidad</p>";
             echo "<p>Subtotal: $" . number_format($subtotal, 2) . "</p>";
             echo "<p>Descuento ($edad): " . ($descuento * 100) . "%</p>";
