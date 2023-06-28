@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es-cl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema Solenium</title>
+    <link href="Style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+        <h2>Formulario de ingreso de entradas al cine</h2>
+
+    <form method="post" action="procesar.php">
+        <label for="Pelicula">Selecciona tu pelicula</label>
+        <select name="pelicula" id="pelicula">
+            <option>Seleccionar</option>
+            <option>El hombre Araña, atrevez del spider-verso</option>
+            <option>Flash</option>
+            <option>oppenheimer</option>
+            <option>Corazones de Hierro</option>
+            <option>Gran Turismo</option>
+        </select>
+        <br><br>
+        <label for="edad">Selecciona tu edad:</label>
+        <select name="edad" id="edad">
+            <option value="niño">Niño</option>
+            <option value="adulto">Adulto</option>
+            <option value="adulto_mayor">Adulto Mayor</option>
+        </select>
+        <br><br>
+        <label for="cantidad">Cantidad de entradas:</label>
+        <input type="number" name="cantidad" id="cantidad" min="1" required>
+        <br><br>
+        <input type="submit" value="Comprar entradas">
+    </form>
+</body>
+</html>
