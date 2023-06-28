@@ -7,7 +7,7 @@
 <body>
 <body>
     <div class="boleta">
-        <img src="./Img/Cine_Hoyts.png" alt="Cine_Hoyts">
+        <img clas = "logo" src="./Img/Cine_Hoyts.png" alt="Cine_Hoyts">
         <h3>Boleta de compra</h3>
         <?php
         $descuentos = array(
